@@ -1,0 +1,321 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>HotelApp</Name>
+    <RootNamespace>HotelApp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6e52e03d-28e0-4b37-b9b6-5b37f67574a9</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>node_modules\@vue\cli-service\bin\vue-cli-service.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+    <ScriptArguments>serve</ScriptArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="public\bootstrap\dist\css\bootstrap-grid.css" />
+    <Content Include="public\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <Content Include="public\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Include="public\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="public\bootstrap\dist\css\bootstrap-reboot.css" />
+    <Content Include="public\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <Content Include="public\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="public\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="public\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="public\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="public\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="public\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="public\bootstrap\dist\js\bootstrap.bundle.js" />
+    <Content Include="public\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <Content Include="public\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="public\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="public\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="public\bootstrap\dist\js\bootstrap.js.map" />
+    <Content Include="public\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="public\bootstrap\dist\js\bootstrap.min.js.map" />
+    <Content Include="public\bootstrap\js\dist\alert.js" />
+    <Content Include="public\bootstrap\js\dist\alert.js.map" />
+    <Content Include="public\bootstrap\js\dist\button.js" />
+    <Content Include="public\bootstrap\js\dist\button.js.map" />
+    <Content Include="public\bootstrap\js\dist\carousel.js" />
+    <Content Include="public\bootstrap\js\dist\carousel.js.map" />
+    <Content Include="public\bootstrap\js\dist\collapse.js" />
+    <Content Include="public\bootstrap\js\dist\collapse.js.map" />
+    <Content Include="public\bootstrap\js\dist\dropdown.js" />
+    <Content Include="public\bootstrap\js\dist\dropdown.js.map" />
+    <Content Include="public\bootstrap\js\dist\index.js" />
+    <Content Include="public\bootstrap\js\dist\index.js.map" />
+    <Content Include="public\bootstrap\js\dist\modal.js" />
+    <Content Include="public\bootstrap\js\dist\modal.js.map" />
+    <Content Include="public\bootstrap\js\dist\popover.js" />
+    <Content Include="public\bootstrap\js\dist\popover.js.map" />
+    <Content Include="public\bootstrap\js\dist\scrollspy.js" />
+    <Content Include="public\bootstrap\js\dist\scrollspy.js.map" />
+    <Content Include="public\bootstrap\js\dist\tab.js" />
+    <Content Include="public\bootstrap\js\dist\tab.js.map" />
+    <Content Include="public\bootstrap\js\dist\toast.js" />
+    <Content Include="public\bootstrap\js\dist\toast.js.map" />
+    <Content Include="public\bootstrap\js\dist\tooltip.js" />
+    <Content Include="public\bootstrap\js\dist\tooltip.js.map" />
+    <Content Include="public\bootstrap\js\dist\util.js" />
+    <Content Include="public\bootstrap\js\dist\util.js.map" />
+    <Content Include="public\bootstrap\js\src\alert.js" />
+    <Content Include="public\bootstrap\js\src\button.js" />
+    <Content Include="public\bootstrap\js\src\carousel.js" />
+    <Content Include="public\bootstrap\js\src\collapse.js" />
+    <Content Include="public\bootstrap\js\src\dropdown.js" />
+    <Content Include="public\bootstrap\js\src\index.js" />
+    <Content Include="public\bootstrap\js\src\modal.js" />
+    <Content Include="public\bootstrap\js\src\popover.js" />
+    <Content Include="public\bootstrap\js\src\scrollspy.js" />
+    <Content Include="public\bootstrap\js\src\tab.js" />
+    <Content Include="public\bootstrap\js\src\toast.js" />
+    <Content Include="public\bootstrap\js\src\tools\sanitizer.js" />
+    <Content Include="public\bootstrap\js\src\tooltip.js" />
+    <Content Include="public\bootstrap\js\src\util.js" />
+    <Content Include="public\bootstrap\LICENSE" />
+    <Content Include="public\bootstrap\package.json" />
+    <Content Include="public\bootstrap\README.md" />
+    <Content Include="public\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="public\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="public\bootstrap\scss\bootstrap.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_deprecate.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_float.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_size.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="public\bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_align.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_background.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_display.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_embed.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_float.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_overflow.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_position.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_shadows.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_stretched-link.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_text.scss" />
+    <Content Include="public\bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="public\bootstrap\scss\vendor\_rfs.scss" />
+    <Content Include="public\bootstrap\scss\_alert.scss" />
+    <Content Include="public\bootstrap\scss\_badge.scss" />
+    <Content Include="public\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="public\bootstrap\scss\_button-group.scss" />
+    <Content Include="public\bootstrap\scss\_buttons.scss" />
+    <Content Include="public\bootstrap\scss\_card.scss" />
+    <Content Include="public\bootstrap\scss\_carousel.scss" />
+    <Content Include="public\bootstrap\scss\_close.scss" />
+    <Content Include="public\bootstrap\scss\_code.scss" />
+    <Content Include="public\bootstrap\scss\_custom-forms.scss" />
+    <Content Include="public\bootstrap\scss\_dropdown.scss" />
+    <Content Include="public\bootstrap\scss\_forms.scss" />
+    <Content Include="public\bootstrap\scss\_functions.scss" />
+    <Content Include="public\bootstrap\scss\_grid.scss" />
+    <Content Include="public\bootstrap\scss\_images.scss" />
+    <Content Include="public\bootstrap\scss\_input-group.scss" />
+    <Content Include="public\bootstrap\scss\_jumbotron.scss" />
+    <Content Include="public\bootstrap\scss\_list-group.scss" />
+    <Content Include="public\bootstrap\scss\_media.scss" />
+    <Content Include="public\bootstrap\scss\_mixins.scss" />
+    <Content Include="public\bootstrap\scss\_modal.scss" />
+    <Content Include="public\bootstrap\scss\_nav.scss" />
+    <Content Include="public\bootstrap\scss\_navbar.scss" />
+    <Content Include="public\bootstrap\scss\_pagination.scss" />
+    <Content Include="public\bootstrap\scss\_popover.scss" />
+    <Content Include="public\bootstrap\scss\_print.scss" />
+    <Content Include="public\bootstrap\scss\_progress.scss" />
+    <Content Include="public\bootstrap\scss\_reboot.scss" />
+    <Content Include="public\bootstrap\scss\_root.scss" />
+    <Content Include="public\bootstrap\scss\_spinners.scss" />
+    <Content Include="public\bootstrap\scss\_tables.scss" />
+    <Content Include="public\bootstrap\scss\_toasts.scss" />
+    <Content Include="public\bootstrap\scss\_tooltip.scss" />
+    <Content Include="public\bootstrap\scss\_transitions.scss" />
+    <Content Include="public\bootstrap\scss\_type.scss" />
+    <Content Include="public\bootstrap\scss\_utilities.scss" />
+    <Content Include="public\bootstrap\scss\_variables.scss" />
+    <Content Include="public\css\app.css" />
+    <Content Include="public\css\demo.css" />
+    <Content Include="public\css\light-bootstrap-dashboard.css" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\index.html" />
+    <Content Include="public\js\jquery-3.5.1.min.js" />
+    <Content Include="src\App.vue" />
+    <Content Include="src\components\Button\FooterButton.vue" />
+    <Content Include="src\components\Card\Card.vue" />
+    <Content Include="src\components\Card\ChartCard.vue" />
+    <Content Include="src\components\Card\StatsCard.vue" />
+    <Content Include="src\components\HelloWorld.vue" />
+    <Content Include="src\components\Home.vue" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="src\components\IncrementSearch.vue" />
+    <Content Include="src\components\IncrementSearch\Hinsyu.vue" />
+    <Content Include="src\components\IncrementSearch\Seisansya.vue" />
+    <Content Include="src\components\IncrementSearch\Syouhin.vue" />
+    <Content Include="src\components\Keyboard.vue" />
+    <Content Include="src\components\KeyboardEvents.vue" />
+    <Content Include="src\components\Modal.vue" />
+    <Content Include="src\config.js" />
+    <Content Include="src\js\add\add.js" />
+    <Content Include="src\js\api_url.js" />
+    <Content Include="src\js\array.js" />
+    <Content Include="src\js\array\key_change.js" />
+    <Content Include="src\js\search\autocomplete.js" />
+    <Content Include="src\js\status\exsist.js" />
+    <Content Include="src\js\status\input_status.js" />
+    <Content Include="src\js\status\login.js" />
+    <Content Include="src\js\status\time.js" />
+    <Content Include="src\js\status\validation.js" />
+    <Content Include="src\pages\Login.vue" />
+    <Content Include="src\pages\MasterAlertSetting.vue" />
+    <Content Include="src\pages\MasterDestination.vue" />
+    <Content Include="src\pages\MasterDisease.vue" />
+    <Content Include="src\pages\MasterInstruction.vue" />
+    <Content Include="src\pages\MasterMember.vue" />
+    <Content Include="src\pages\MasterVehicle.vue" />
+    <Content Include="src\pages\RollCallLogFormOutput.vue" />
+    <Content Include="src\pages\RollCallLogInput.vue" />
+    <Content Include="src\pages\RollCallStatus.vue" />
+    <Content Include="src\router.js" />
+    <Content Include="src\views\About.vue" />
+    <Content Include="src\views\Dashboard.vue" />
+    <Content Include="src\views\Home.vue" />
+    <Content Include="src\views\Search\Search.vue" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dist\" />
+    <Folder Include="public\" />
+    <Folder Include="public\bootstrap\" />
+    <Folder Include="public\bootstrap\dist\" />
+    <Folder Include="public\bootstrap\dist\css\" />
+    <Folder Include="public\bootstrap\dist\js\" />
+    <Folder Include="public\bootstrap\js\" />
+    <Folder Include="public\bootstrap\js\dist\" />
+    <Folder Include="public\bootstrap\js\src\" />
+    <Folder Include="public\bootstrap\js\src\tools\" />
+    <Folder Include="public\bootstrap\scss\" />
+    <Folder Include="public\bootstrap\scss\mixins\" />
+    <Folder Include="public\bootstrap\scss\utilities\" />
+    <Folder Include="public\bootstrap\scss\vendor\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\js\" />
+    <Folder Include="src\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\Button\" />
+    <Folder Include="src\components\Card\" />
+    <Folder Include="src\components\IncrementSearch\" />
+    <Folder Include="src\js\" />
+    <Folder Include="src\js\add\" />
+    <Folder Include="src\js\array\" />
+    <Folder Include="src\js\search\" />
+    <Folder Include="src\js\status\" />
+    <Folder Include="src\layout\" />
+    <Folder Include="src\pages\" />
+    <Folder Include="src\views\" />
+    <Folder Include="src\views\Search\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="babel.config.js" />
+    <Content Include="src\layout\Content.vue" />
+    <Content Include="src\layout\ContentFooter.vue" />
+    <Content Include="src\layout\DashboardLayout.vue" />
+    <Content Include="src\layout\MobileMenu.vue" />
+    <Content Include="src\layout\SidebarLink.vue" />
+    <Content Include="src\layout\TopNavbar.vue" />
+    <Content Include="src\layout\Wrapper.vue" />
+    <Content Include="src\main.js" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+      npm run build
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

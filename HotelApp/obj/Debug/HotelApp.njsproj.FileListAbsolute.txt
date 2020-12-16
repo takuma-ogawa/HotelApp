@@ -1,0 +1,3 @@
+C:\Users\takum\Documents\hokuriku_tosbac\HotelApp\project\HotelApp\HotelApp\obj\Debug\HotelApp.njsprojAssemblyReference.cache
+C:\Users\takum\Documents\hokuriku_tosbac\HotelApp\project\HotelApp\HotelApp\obj\Debug\HotelApp.njsproj.CoreCompileInputs.cache
+C:\Users\takum\Documents\hokuriku_tosbac\HotelApp\project\HotelApp\HotelApp\bin\Microsoft.NodejsTools.WebRole.dll
